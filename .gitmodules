@@ -1,0 +1,9 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/symbiosika/kinaut_robot-base
+	branch = develop
+
+
+# git submodule add -b develop https://github.com/symbiosika/kinaut_robot-base backend
+# pull again
+# git submodule update --init --recursive
