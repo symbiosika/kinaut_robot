@@ -72,7 +72,7 @@ jobs:
           mkdir -p dist/static
           mkdir -p dist/static/docs
           mkdir -p dist/public
-          unzip -o kinaut_robot-frontend-develop -d ./dist
+          # unzip -o kinaut_robot-frontend-develop -d ./dist
           unzip -o kinaut_login-main -d ./dist/public
           unzip -o kinaut_robot-base-develop -d ./dist
           # unzip -okinaut_docs -d ./tmp_docs
