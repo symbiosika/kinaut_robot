@@ -34,13 +34,13 @@ jobs:
           echo "\nSubmodule commits:"
           git submodule foreach 'echo "Repository: $name"; git log -1 --oneline; echo "Status:"; git status --short; echo "----------------"'
 
-      - name: Download artifact "kinaut_robot-frontend"
-        uses: bettermarks/action-artifact-download@0.5.1
-        with:
-          repo: symbiosika/kinaut_robot-frontend
-          token: ${{ secrets.BE_GH_REGISTRY_KEY }}
-          artifact_name: kinaut_robot-frontend-develop
-          wait_seconds: 1
+      # - name: Download artifact "kinaut_robot-frontend"
+      #   uses: bettermarks/action-artifact-download@0.5.1
+      #   with:
+      #     repo: symbiosika/kinaut_robot-frontend
+      #     token: ${{ secrets.BE_GH_REGISTRY_KEY }}
+      #     artifact_name: kinaut_robot-frontend-develop
+      #     wait_seconds: 1
 
       - name: Download artifact "kinaut_login"
         uses: bettermarks/action-artifact-download@0.5.1
